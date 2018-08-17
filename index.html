@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<head>
+<body>
+	<div>
+		<h1>ICOS Switches</h1>
+	</div>
+	<div class="onoffswitch">
+    	<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="A">
+    	<label class="onoffswitch-label" for="A">
+        	<span class="onoffswitch-inner"></span>
+        	<span class="onoffswitch-switch"></span>
+    	</label>
+	</div>
+	<div class="onoffswitch">
+    	<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="B">
+    	<label class="onoffswitch-label" for="B">
+        	<span class="onoffswitch-inner"></span>
+        	<span class="onoffswitch-switch"></span>
+    	</label>
+	</div>
+	<div class="onoffswitch">
+    	<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="C">
+    	<label class="onoffswitch-label" for="C">
+        	<span class="onoffswitch-inner"></span>
+        	<span class="onoffswitch-switch"></span>
+    	</label>
+	</div>
+	<div class="onoffswitch">
+    	<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="D">
+    	<label class="onoffswitch-label" for="D">
+        	<span class="onoffswitch-inner"></span>
+        	<span class="onoffswitch-switch"></span>
+    	</label>
+	</div>
+	<div class="onoffswitch">
+    	<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="E">
+    	<label class="onoffswitch-label" for="E">
+        	<span class="onoffswitch-inner"></span>
+        	<span class="onoffswitch-switch"></span>
+    	</label>
+	</div>
+	<style type="text/css">
+		.btn-group button{
+			background-color: #006699;
+			color: white;
+			padding: 10px 24px;
+			width: 25%;
+			display: block;
+		}
+		.onoffswitch {
+		    position: relative; width: 193px;
+		    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+		}
+		.onoffswitch-checkbox {
+		    display: none;
+		}
+		.onoffswitch-label {
+		    display: block; overflow: hidden; cursor: pointer;
+		    border: 2px solid #999999; border-radius: 17px;
+		}
+		.onoffswitch-inner {
+		    display: block; width: 200%; margin-left: -100%;
+		    transition: margin 0.3s ease-in 0s;
+		}
+		.onoffswitch-inner:before, .onoffswitch-inner:after {
+		    display: block; float: left; width: 50%; height: 62px; padding: 0; line-height: 62px;
+		    font-size: 15px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+		    box-sizing: border-box;
+		}
+		.onoffswitch-inner:before {
+		    content: "LEFT";
+		    padding-left: 14px;
+		    background-color: #B84F68; color: #FFFFFF;
+		}
+		.onoffswitch-inner:after {
+		    content: "RIGHT";
+		    padding-right: 14px;
+		    background-color: #5F62C2; color: #FFFFFF;
+		    text-align: right;
+		}
+		.onoffswitch-switch {
+		    display: block; width: 42px; margin: 10px;
+		    background: #D1C1C1;
+		    position: absolute; top: 0; bottom: 0;
+		    right: 127px;
+		    border: 2px solid #999999; border-radius: 17px;
+		    transition: all 0.3s ease-in 0s; 
+		}
+		.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+		    margin-left: 0;
+		}
+		.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+		    right: 0px; 
+		}
+	</style>
+</body>
